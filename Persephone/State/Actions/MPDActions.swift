@@ -28,6 +28,11 @@ struct MPDAddSongToQueue: Action {
   let queuePos: Int
 }
 
+struct MPDAddAlbumToQueue: Action {
+  let album: MPDClient.MPDAlbum
+  let queuePos: Int
+}
+
 struct MPDAppendTrack: Action {
   let song: MPDClient.MPDSong
 }
